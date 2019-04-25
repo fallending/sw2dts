@@ -23,7 +23,7 @@ jobs:
         type: integer
         default: 10
     docker:
-      - image: circleci/node:<< parameters.node_ver >>
+      - image: node:<< parameters.node_ver >>
     steps:
       - checkout
       - restore_cache:
